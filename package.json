@@ -1,23 +1,25 @@
 {
-  "name": "solo",
-  "description": "A Ghost theme",
-  "version": "1.0.0",
+  "name": "daviswhitehead-ghost",
+  "description": "A custom Ghost theme for entrepreneurs.",
+  "version": "1.0.1",
   "private": true,
   "engines": {
     "ghost": ">=5.0.0"
   },
   "license": "MIT",
   "author": {
-    "name": "Ghost Foundation",
-    "email": "hello@ghost.org",
-    "url": "https://ghost.org"
+    "name": "Davis Whitehead",
+    "email": "whitehead.davis@gmail.com",
+    "url": "https://www.daviswhitehead.com/"
   },
   "keywords": [
     "ghost",
     "theme",
-    "ghost-theme"
+    "ghost-theme",
+    "entrepreneur",
+    "portfolio"
   ],
-  "docs": "https://solo.ghost.io/about/",
+  "docs": "https://github.com/daviswhitehead/daviswhitehead.com-ghost",
   "config": {
     "posts_per_page": 6,
     "image_sizes": {
