@@ -1,0 +1,32 @@
+.gh-head {
+    font-size: 1.6rem;
+    background-color: transparent;
+}
+
+.gh-head-logo {
+    font-weight: 800;
+}
+
+.gh-head-logo img {
+    max-height: 48px;
+}
+
+.gh-head-menu,
+.gh-head-link {
+    font-weight: 700;
+}
+
+.is-head-stacked .gh-head-menu::before,
+.is-head-stacked .gh-head-menu::after {
+    background-color: var(--color-border);
+}
+
+.gh-head-menu a {
+    color: inherit;
+}
+
+@media (max-width: 991px) {
+    .is-head-open:not(.is-head-brand):not(.is-head-dark):not(.is-head-transparent) :is(#gh-head, #gh-head .gh-head-actions) {
+        background-color: var(--background-color);
+    }
+}

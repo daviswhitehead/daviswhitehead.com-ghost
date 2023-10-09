@@ -1,0 +1,71 @@
+/* Post card
+/* ---------------------------------------------------------- */
+
+.gh-card-link:hover {
+    opacity: 1;
+}
+
+.gh-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.gh-card-title {
+    font-weight: 800;
+    word-break: break-word;
+}
+
+.has-serif-font .gh-card-title {
+    font-family: var(--font-serif);
+}
+
+.has-mono-font .gh-card-title {
+    font-family: var(--font-mono);
+}
+
+.gh-card-link:hover .gh-card-title {
+    opacity: 0.8;
+}
+
+.gh-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-secondary-text);
+}
+
+.gh-card-meta>* {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.gh-card-meta>*+*:not(script):not(.gh-card-access)::before {
+    width: 2px;
+    height: 2px;
+    content: "";
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+.gh-card-access {
+    padding: 0 10px 0 8px;
+    margin-left: 4px;
+    background-color: var(--color-border);
+    border-radius: 40px;
+}
+
+.has-parallax-feed .gh-card-access {
+    color: var(--color-darker-gray);
+    background-color: var(--color-white);
+}
+
+.gh-card-access svg {
+    margin-right: -5px;
+}

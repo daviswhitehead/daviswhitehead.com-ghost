@@ -1,0 +1,178 @@
+.is-wave .u-permalink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    outline: none;
+}
+
+.is-wave .u-object-fit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.is-wave .u-overlay {
+    position: relative;
+}
+
+.is-wave .u-overlay::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    content: "";
+    background-color: var(--black-color);
+    opacity: 1;
+    transition: opacity 1s var(--animation-base);
+}
+
+.is-wave .u-overlay.initialized::before {
+    opacity: 0.4;
+}
+
+.is-wave .u-placeholder {
+    position: relative;
+    z-index: 10;
+    background-color: var(--light-gray-color);
+}
+
+.is-wave .u-placeholder::before {
+    display: block;
+    content: "";
+}
+
+.is-wave .u-placeholder.horizontal::before {
+    padding-bottom: 50%;
+}
+
+.is-wave .u-placeholder.rectangle::before {
+    padding-bottom: 62.5%;
+}
+
+.is-wave .u-placeholder.square::before {
+    padding-bottom: 100%;
+}
+
+@media (max-width: 767px) {
+    .is-wave .u-placeholder.horizontal::before {
+        padding-bottom: 62.5%;
+    }
+}
+
+.is-wave .u-text-format {
+    font-size: 16px;
+}
+
+.is-wave .u-text-format > * {
+    margin-bottom: 0;
+}
+
+.is-wave .u-text-format > * + * {
+    margin-top: 30px;
+}
+
+.is-wave .u-text-format > *:first-child {
+    margin-top: 0 !important;
+}
+
+.is-wave .u-text-format > * + p,
+.is-wave .u-text-format > * + ul,
+.is-wave .u-text-format > * + ol {
+    margin-top: 20px;
+}
+
+.is-wave .u-text-format h1,
+.is-wave .u-text-format h2,
+.is-wave .u-text-format h3,
+.is-wave .u-text-format h4,
+.is-wave .u-text-format h5,
+.is-wave .u-text-format h6 {
+    margin-top: 30px;
+}
+
+.is-wave .has-serif-title .u-text-format h1,
+.is-wave .has-serif-title .u-text-format h2,
+.is-wave .has-serif-title .u-text-format h3,
+.is-wave .has-serif-title .u-text-format h4,
+.is-wave .has-serif-title .u-text-format h5,
+.is-wave .has-serif-title .u-text-format h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+.is-wave .u-text-format h1 + p,
+.is-wave .u-text-format h2 + p,
+.is-wave .u-text-format h3 + p,
+.is-wave .u-text-format h4 + p,
+.is-wave .u-text-format h5 + p,
+.is-wave .u-text-format h6 + p {
+    margin-top: 15px;
+}
+
+.is-wave .u-text-format h1 {
+    font-size: 25px;
+}
+
+.is-wave .u-text-format h2 {
+    font-size: 22px;
+}
+
+.is-wave .u-text-format h3 {
+    font-size: 19px;
+}
+
+.is-wave .u-text-format h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.is-wave .u-text-format h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.is-wave .u-text-format h6 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.is-wave .u-text-format a {
+    text-decoration: underline;
+}
+
+.is-wave .u-text-format ul li:not(:first-child),
+.is-wave .u-text-format ol li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.is-wave .u-text-format > .kg-card,
+.is-wave .u-text-format > .kg-card + * {
+    margin-top: 45px;
+}
+
+.is-wave .u-text-format hr,
+.is-wave .u-text-format hr + * {
+    margin-top: 40px;
+}
+
+.is-wave .u-text-format blockquote,
+.is-wave .u-text-format blockquote + * {
+    margin-top: 30px;
+}
+
+.is-wave .has-serif-body .u-text-format > blockquote,
+.is-wave .has-serif-body .u-text-format > ol,
+.is-wave .has-serif-body .u-text-format > ul,
+.is-wave .has-serif-body .u-text-format > dl,
+.is-wave .has-serif-body .u-text-format > p {
+    font-family: var(--font-serif);
+}

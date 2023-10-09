@@ -1,0 +1,26 @@
+<article class="is-wave {{post_class}}">
+    <div class="is-wave post-media">
+        <div class="is-wave u-placeholder square">
+            <a href="{{url}}">
+                {{#if feature_image}}
+                    <img class="is-wave post-image lazyload u-object-fit" src="{{img_url feature_image size="m"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+                {{else}}
+                    <span class="is-wave letter">{{title}}</span>
+                {{/if}}
+            </a>
+        </div>
+    </div>
+    <div class="is-wave post-wrapper">
+        <header class="is-wave post-header">
+            <a class="is-wave post-title-link" href="{{url}}">
+                <h2 class="is-wave post-title">{{title}}</h2>
+                {{#if excerpt}}
+                    <div class="is-wave post-excerpt">
+                        {{excerpt words="25"}}
+                    </div>
+                {{/if}}
+            </a>
+        </header>
+        {{> "wave/post-meta"}}
+    </div>
+</article>

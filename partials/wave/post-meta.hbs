@@ -1,0 +1,20 @@
+<div class="is-wave post-meta">
+  <span class="is-wave post-meta-item post-meta-date">
+    <time datetime="{{date format="YYYY-MM-DD"}}">
+      {{date published_at}}
+    </time>
+  </span>
+  {{#if tags}}
+    <span class="is-wave post-meta-item post-meta-tags">
+      {{#foreach tags}}
+        <a
+          class="is-wave post-tag post-tag-{{slug}}"
+          href="{{url}}"
+          title="{{name}}"
+        >
+          {{name}}
+        </a>
+      {{/foreach}}
+    </span>
+  {{/if}}
+</div>

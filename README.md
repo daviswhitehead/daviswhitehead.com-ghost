@@ -1,8 +1,8 @@
-# Solo
+# daviswhitehead.com-ghost
 
-Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This theme is highly customizable, with a few simple settings that allow you to quickly apply your own personal style to your site.
+This is a custom ghost theme for entrepreneurs. It powers daviswhitehead.com and acts as a portfolio that allows you to highlight products & services alongside your writing.
 
-**Demo: https://solo.ghost.io**
+**Demo: daviswhitehead.com**
 
 # Instructions
 
@@ -28,6 +28,19 @@ The `zip` Gulp task packages the theme files into `dist/solo.zip`, which you can
 ```bash
 yarn zip
 ```
+
+## Resources
+
+https://ghost.org/tutorials/local-ghost/#install-ghost-locally
+https://www.npmjs.com/package/@tryghost/shared-theme-assets?activeTab=readme
+https://ghost.org/tutorials/build-css-files/
+
+## Process for cloning templates
+
+- Download the template
+- Find the section in the code using developer tools
+- Iteratively clone each file and put it in its own folder
+- Prefix all new css with template your cloning from
 
 # Contribution
 

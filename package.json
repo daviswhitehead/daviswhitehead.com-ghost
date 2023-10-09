@@ -73,9 +73,6 @@
       "header_section_layout": {
         "type": "select",
         "options": [
-          "Side by side",
-          "Large background",
-          "Typographic profile",
           "Centered circle"
         ],
         "default": "Centered circle",

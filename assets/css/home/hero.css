@@ -1,0 +1,108 @@
+/* Home Layout
+/* ---------------------------------------------------------- */
+
+.home-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gh-about-content {
+    word-break: break-word;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-bottom: clamp(2.4rem, 2rem + 1.25vw, 4rem);
+    padding-top: clamp(2.4rem, 2rem + 1.25vw, 4rem);
+}
+
+.center .primary-secondary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.left .gh-about-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: clamp(2.4rem, 2rem + 1.25vw, 4rem);
+    padding-top: clamp(2.4rem, 2rem + 1.25vw, 4rem);
+}
+
+.left .primary-secondary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/* Primary Text */
+/* ---------------------------------------------------------- */
+
+.gh-about-primary {
+    max-width: 1200px;
+    font-size: clamp(3.2rem, 2.4452rem + 2.0968vw, 5.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.has-serif-font .gh-about-primary {
+    font-family: var(--font-serif);
+}
+
+.has-mono-font .gh-about-primary {
+    font-family: var(--font-mono);
+}
+
+.gh-about-primary a {
+    text-decoration: underline;
+}
+
+/* Secondary Text */
+/* ---------------------------------------------------------- */
+
+.gh-about-secondary {
+    max-width: 840px;
+    font-size: clamp(2.4rem, 0.54vw + 2.14rem, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.008em;
+}
+
+.has-serif-font .gh-about-secondary {
+    font-family: var(--font-serif);
+}
+
+.has-mono-font .gh-about-secondary {
+    font-family: var(--font-mono);
+}
+
+.gh-about-primary + .gh-about-secondary {
+    max-width: 640px;
+    margin-top: 20px;
+    font-size: clamp(2rem, 0.36vw + 1.83rem, 2.4rem);
+    font-weight: 450;
+}
+
+.gh-about-secondary a {
+    text-decoration: underline;
+}
+
+/* Miscellaneous */
+/* ---------------------------------------------------------- */
+
+.gh-about-image {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    object-fit: cover;
+}
