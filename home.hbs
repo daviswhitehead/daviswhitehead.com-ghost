@@ -1,0 +1,167 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- Copied from Solo index.hbs --}}
+<section class="has-circle-about gh-about gh-outer{{#match @custom.header_section_layout "!=" "Typographic profile"}}{{#unless @site.cover_image}} no-image{{/unless}}{{else}}{{#unless @site.icon}} no-image{{/unless}}{{/match}}">
+    <div class="has-circle-about gh-about-inner gh-inner">
+            {{#match @custom.header_section_layout "!=" "Typographic profile"}}
+                {{#if @site.cover_image}}
+                    <img class="gh-about-image" src="{{@site.cover_image}}" alt="{{@site.title}}"/>
+                {{/if}}
+            {{else}}
+                {{#if @site.icon}}
+                    <img class="gh-about-image" src="{{@site.icon}}" alt="{{@site.title}}" />
+                {{/if}}
+            {{/match}}
+        <script>
+            (function () {
+                if (!document.body.classList.contains('has-background-about')) return;
+
+                const about = document.querySelector('.gh-about');
+                if (!about) return;
+
+                const image = about.querySelector('.gh-about-image');
+
+                about.style.setProperty('--about-height', image.clientWidth * image.naturalHeight / image.naturalWidth + 'px');
+                about.classList.add('initialized');
+            })();
+        </script>
+        <div class="has-circle-about gh-about-content">
+            <div class="has-circle-about gh-about-content-inner">
+                {{! Edited by me }}
+                {{#if @custom.home_main_primary_header}}
+                    <h1 class="gh-about-primary">{{{@custom.home_main_primary_header}}}</h1>
+                {{/if}}
+                {{#if @custom.home_main_secondary_header}}
+                    <p class="gh-about-secondary">{{{@custom.home_main_secondary_header}}}</p>
+                {{/if}}
+                {{#if @site.members_enabled}}
+                    {{#unless @member}}
+                        <div class="gh-subscribe-input" data-portal>
+                            jamie@example.com
+                            <span class="gh-btn gh-primary-btn">Subscribe</span>
+                        </div>
+                    {{/unless}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{! Added by me }}
+<section class="gh-about-section gh-outer{{#match @custom.header_section_layout "!=" "Typographic profile"}}{{#unless @site.cover_image}} no-image{{/unless}}{{else}}{{#unless @site.icon}} no-image{{/unless}}{{/match}}">
+    <div class="has-side-about gh-about-inner gh-inner">
+        <div class="has-side-about gh-about-content">
+            <div class="has-side-about gh-about-content-inner">
+                {{#if @custom.home_products_primary_header}}
+                    <h1 class="gh-about-primary">{{{@custom.home_products_primary_header}}}</h1>
+                {{/if}}
+                {{#if @custom.home_products_secondary_header}}
+                    <p class="gh-about-secondary">{{{@custom.home_products_secondary_header}}}</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{! Copied from London index.hbs }}
+<div class="post-feed gh-feed">
+    {{! Added by me }}
+    {{#get "posts" include="tags" filter="tag:[hash-home]+tag:[product]" limit="4" }}
+        {{#foreach posts}}
+            {{> "post-card"}}
+        {{/foreach}}
+    {{/get}}
+</div>
+
+{{! Added by me }}
+<section class="gh-about-section gh-outer{{#match @custom.header_section_layout "!=" "Typographic profile"}}{{#unless @site.cover_image}} no-image{{/unless}}{{else}}{{#unless @site.icon}} no-image{{/unless}}{{/match}}">
+    <div class="has-side-about gh-about-inner gh-inner">
+        <div class="has-side-about gh-about-content">
+            <div class="has-side-about gh-about-content-inner">
+                {{#if @custom.home_writing_primary_header}}
+                    <h1 class="gh-about-primary">
+                        {{{@custom.home_writing_primary_header}}}
+                    </h1>
+                {{/if}}
+                {{#if @custom.home_writing_secondary_header}}
+                    <p class="gh-about-secondary">
+                        {{{@custom.home_writing_secondary_header}}}
+                    </p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{! Copied from Solo index.hbs }}
+<main class="gh-main-alt gh-outer">
+    <div class="gh-feed gh-inner">
+        {{! Added by me }}
+        {{#get "posts" include="tags" filter="tag:[hash-home]+tag:[writing]" limit="4" }}
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        {{/get}}
+    </div>
+</main>
+
+{{!-- From Edition theme --}}
+
+{{! Added by me }}
+<section class="gh-about-section gh-outer{{#match @custom.header_section_layout "!=" "Typographic profile"}}{{#unless @site.cover_image}} no-image{{/unless}}{{else}}{{#unless @site.icon}} no-image{{/unless}}{{/match}}">
+    <div class="has-side-about gh-about-inner gh-inner">
+        <div class="has-side-about gh-about-content">
+            <div class="has-side-about gh-about-content-inner">
+                {{#if @custom.home_writing_primary_header}}
+                    <h1 class="gh-about-primary">
+                        {{{@custom.home_writing_primary_header}}}
+                    </h1>
+                {{/if}}
+                {{#if @custom.home_writing_secondary_header}}
+                    <p class="gh-about-secondary">
+                        {{{@custom.home_writing_secondary_header}}}
+                    </p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{! Copied from Solo index.hbs }}
+
+<main class="gh-main-alt gh-outer">
+    <div class="gh-feed gh-inner">
+        <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}}{{#match @custom.feed_layout "Text-only"}} text-only{{/match}} gh-feed gh-canvas">
+            {{#get "posts" include="tags" filter="tag:[hash-home]+tag:[writing]" limit="4" }}
+                {{#foreach posts}}
+                    {{> "loop_edition"}}
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</main>
+
+{{!-- {{! Copied from Solo index.hbs }}
+{{#contentFor "body_class"}}
+    {{#match @custom.header_section_layout "Side by side"}} has-side-about{{/match}}
+    {{#match @custom.header_section_layout "Large background"}}
+        {{#if @site.cover_image}}
+            is-head-transparent has-background-about
+        {{else}}
+            has-side-about
+        {{/if}}
+    {{/match}}
+    {{#match @custom.header_section_layout "Typographic profile"}}
+        {{#if @site.icon}}
+            has-typographic-about
+        {{else}}
+            has-side-about
+        {{/if}}
+    {{/match}}
+    {{#match @custom.header_section_layout "Centered circle"}}
+        has-circle-about
+    {{/match}}
+{{/contentFor}} --}}
