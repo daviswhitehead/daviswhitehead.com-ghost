@@ -32,8 +32,15 @@ yarn zip
 ## Resources
 
 https://ghost.org/tutorials/local-ghost/#install-ghost-locally
+This is especially helpful for getting back up and running.
+
 https://www.npmjs.com/package/@tryghost/shared-theme-assets?activeTab=readme
+
 https://ghost.org/tutorials/build-css-files/
+
+https://ghost.org/tutorials/
+
+https://ghost.org/docs/themes/structure/
 
 ## Process for cloning templates
 
@@ -49,3 +56,10 @@ This repo is synced automatically with [TryGhost/Themes](https://github.com/TryG
 ## Copyright & License
 
 Copyright (c) 2013-2023 Ghost Foundation - Released under the [MIT license](LICENSE).
+
+# Frequently Used Commands
+
+`npm run zip` to zip up css changes
+`ghost start`
+`ghost stop`
+`ghost restart`

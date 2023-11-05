@@ -1,0 +1,49 @@
+{{!< default}}
+
+{{#post}}
+
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <article class="gh-article {{post_class}}">
+            {{#match @page.show_title_and_feature_image}}
+                <header class="gh-article-header gh-canvas">
+                    <h1 class="gh-article-title">{{title}}</h1>
+                    {{#if custom_excerpt}}
+                        <p class="gh-article-excerpt">{{custom_excerpt}}</p>
+                    {{/if}}
+                    {{> "feature-image"}}
+                </header>
+            {{/match}}
+
+            <section class="gh-content gh-canvas">
+                {{content}}
+            </section>
+        </article>
+    </div>
+</main>
+
+{{/post}}
+
+<section class="home-section">
+    <div class="left gh-outer">
+        <div class="gh-about-inner gh-inner">
+            <div class="gh-about-content">
+                <div class="left primary-secondary-content">
+                    <h2>Latest</h2>
+                    <p>All products in order of recently posted.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{! Copied from London index.hbs }}
+    <div class="post-feed">
+        {{! Added by me }}
+        {{#get "posts" include="tags" filter="tag:[hash-home]+tag:[products]" }}
+            {{#foreach posts}}
+                {{> "post-card"}}
+            {{/foreach}}
+        {{/get}}
+    </div>
+
+</section>
