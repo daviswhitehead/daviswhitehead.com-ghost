@@ -39,7 +39,7 @@
     {{! Copied from London index.hbs }}
     <div class="post-feed">
         {{! Added by me }}
-        {{#get "posts" include="tags" filter="tag:[hash-home]+tag:[products]" }}
+        {{#get "posts" include="tags" filter="tag:[products]" }}
             {{#foreach posts}}
                 {{> "post-card"}}
             {{/foreach}}

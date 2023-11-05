@@ -41,7 +41,7 @@
         <div class="is-wave gh-inner">
             <div class="post-feed gh-feed">
                 {{! Added by me }}
-                {{#get "posts" include="tags" filter="tag:[hash-home]+tag:[writing]" }}
+                {{#get "posts" include="tags" filter="tag:[writing]" }}
                     {{#foreach posts}}
                         {{> "wave/loop"}}
                     {{/foreach}}

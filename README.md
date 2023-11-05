@@ -63,3 +63,9 @@ Copyright (c) 2013-2023 Ghost Foundation - Released under the [MIT license](LICE
 `ghost start`
 `ghost stop`
 `ghost restart`
+
+# Deploy
+
+- Commit changes and push to origin
+- [Check github actions to verify theme has been deployed](https://github.com/daviswhitehead/daviswhitehead.com-ghost/actions)
+- [Make any required changes in Ghost admin](https://daviswhitehead-2.ghost.io/ghost/#/dashboard)
