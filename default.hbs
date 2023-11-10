@@ -113,6 +113,22 @@
 {{/is}}
 
 <script src="{{asset "built/main.min.js"}}"></script>
+{{!-- Open external links in a separate tab: https://forum.ghost.org/t/i-want-my-external-links-to-open-in-a-new-tab/9830/16 --}}
+<script>
+  var links = document.querySelectorAll('a');
+	links.forEach((link) => {
+		var a = new RegExp('/' + window.location.host + '/');
+		if(link.href.indexOf("javascript") == -1){
+			if(!a.test(link.href)) {
+				link.addEventListener('click', (event) => {
+					event.preventDefault();
+					event.stopPropagation();
+					window.open(link.href, '_blank');
+				});
+			}
+		}
+	});
+</script>
 
 {{ghost_foot}}
 

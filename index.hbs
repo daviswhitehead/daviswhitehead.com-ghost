@@ -26,11 +26,11 @@
         </script>
         <div class="gh-about-content">
             <div class="gh-about-content-inner">
-                {{#if @custom.home_main_primary_header}}
-                    <h1 class="gh-about-primary">{{{@custom.home_main_primary_header}}}</h1>
+                {{#if @custom.home_hero_header}}
+                    <h1 class="gh-about-primary">{{{@custom.home_hero_header}}}</h1>
                 {{/if}}
-                {{#if @custom.home_main_secondary_header}}
-                    <p class="gh-about-secondary">{{{@custom.home_main_secondary_header}}}</p>
+                {{#if @custom.home_hero_subtext}}
+                    <p class="gh-about-secondary">{{{@custom.home_hero_subtext}}}</p>
                 {{/if}}
                 {{#if @site.members_enabled}}
                     {{#unless @member}}

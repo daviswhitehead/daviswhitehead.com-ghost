@@ -74,6 +74,7 @@
 }
 
 .is-wave .post-meta {
+    margin-top: 16px;
     margin-bottom: 8px;
     font-size: 1.2rem;
     font-weight: 600;

@@ -73,39 +73,62 @@
       "header_section_layout": {
         "type": "select",
         "options": [
+          "Side by side",
+          "Large background",
+          "Typographic profile",
           "Centered circle"
         ],
         "default": "Centered circle",
         "group": "homepage"
       },
-      "home_main_primary_header": {
+      "home_hero_header": {
         "type": "text",
         "default": "Hi, I'm Davis",
         "group": "homepage"
       },
-      "home_main_secondary_header": {
+      "home_hero_subtext": {
         "type": "text",
         "default": "I'm an entrepreneur who makes products people love. I write about product-building and living intentionally.",
         "group": "homepage"
       },
-      "home_products_primary_header": {
+      "home_about_header": {
+        "type": "text",
+        "default": "About",
+        "group": "homepage"
+      },
+      "home_about_subtext": {
+        "type": "text",
+        "default": "By day, I’m a product leader at <a href=\"https://www.cellartracker.com/\">CellarTracker</a>. By night, I’m an entrepreneur building a portfolio of consumer products. I created this website to share my journey and connect with others.",
+        "group": "homepage"
+      },
+      "home_products_header": {
         "type": "text",
         "default": "Products",
         "group": "homepage"
       },
-      "home_products_secondary_header": {
+      "home_products_subtext": {
         "type": "text",
-        "default": "Check out these products I've built.",
+        "default": "My expertise is in consumer tech products. I aspire to create products so good that their users can’t stop talking about them. I’m also passionate about building talented, cohesive teams and a strategic, thoughtful businesses; as that’s what it takes to create a great product.<br><br>These are a few products I’m proud of building.",
         "group": "homepage"
       },
-      "home_writing_primary_header": {
+      "home_writing_header": {
         "type": "text",
         "default": "Writing",
         "group": "homepage"
       },
-      "home_writing_secondary_header": {
+      "home_writing_subtext": {
         "type": "text",
-        "default": "Check out this writing I've built.",
+        "default": "I write to collect my thoughts and connect with others. Some posts are about product management, a product pitch, a retrospective on product-building, or about living intentionally. My goals in writing are to build an engaged community to create products for, to think critically, and to live transparently.<br><br>Below are some of my favorite posts.",
+        "group": "homepage"
+      },
+      "home_contact_header": {
+        "type": "text",
+        "default": "Contact",
+        "group": "homepage"
+      },
+      "home_contact_subtext": {
+        "type": "text",
+        "default": "I created this website to connect with others, so please reach out! Looking for product coaching or consulting? Interested in collaborating to build a product together? Want to discuss my writing? Or do you just want to chat?<br><br><a href=\"mailto:whitehead.davis@gmail.com”>Send me an email.</a>\"",
         "group": "homepage"
       },
       "post_feed_layout": {

@@ -21,8 +21,8 @@ into the {body} of the default.hbs template --}}
         </script>
         <div class="center gh-about-content">
             <div class="primary-secondary-content">
-                <h1 class="gh-about-primary">{{{@custom.home_main_primary_header}}}</h1>
-                <p class="gh-about-secondary">{{{@custom.home_main_secondary_header}}}</p>
+                <h1 class="gh-about-primary">{{{@custom.home_hero_header}}}</h1>
+                <p class="gh-about-secondary">{{{@custom.home_hero_subtext}}}</p>
                 {{#if @site.members_enabled}}
                     {{#unless @member}}
                         <div class="gh-subscribe-input" data-portal>
@@ -42,8 +42,26 @@ into the {body} of the default.hbs template --}}
         <div class="gh-about-inner gh-inner">
             <div class="gh-about-content">
                 <div class="left primary-secondary-content">
-                    <h1 class="gh-about-primary">{{{@custom.home_products_primary_header}}}</h1>
-                    <p class="gh-about-secondary">{{{@custom.home_products_secondary_header}}}</p>
+                    <a href="{{@site.url}}/about">
+                        <h1 class="gh-about-primary">{{{@custom.home_about_header}}}</h1>
+                    </a>
+                    <p class="gh-about-secondary">{{{@custom.home_about_subtext}}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{! Added by me }}
+<section class="home-section">
+    <div class="left gh-outer">
+        <div class="gh-about-inner gh-inner">
+            <div class="gh-about-content">
+                <div class="left primary-secondary-content">
+                    <a href="{{@site.url}}/products">
+                        <h1 class="gh-about-primary">{{{@custom.home_products_header}}}</h1>
+                    </a>
+                    <p class="gh-about-secondary">{{{@custom.home_products_subtext}}}</p>
                 </div>
             </div>
         </div>
@@ -69,8 +87,10 @@ into the {body} of the default.hbs template --}}
         <div class="gh-about-inner gh-inner">
             <div class="gh-about-content">
                 <div class="left primary-secondary-content">
-                        <h1 class="gh-about-primary"> {{{@custom.home_writing_primary_header}}}</h1>
-                        <p class="gh-about-secondary">{{{@custom.home_writing_secondary_header}}}</p>
+                    <a href="{{@site.url}}/writing">
+                        <h1 class="gh-about-primary"> {{{@custom.home_writing_header}}}</h1>
+                    </a>
+                    <p class="gh-about-secondary">{{{@custom.home_writing_subtext}}}</p>
                 </div>
             </div>
         </div>
@@ -90,4 +110,24 @@ into the {body} of the default.hbs template --}}
         </div>
     </main>
 
+</section>
+
+{{! Added by me }}
+<section class="home-section">
+  <div class="left gh-outer">
+    <div class="gh-about-inner gh-inner">
+      <div class="gh-about-content">
+        <div class="left primary-secondary-content">
+          <a href="{{@site.url}}/contact">
+            <h1 class="gh-about-primary">
+              {{{@custom.home_contact_header}}}
+            </h1>
+          </a>
+          <p class="gh-about-secondary">
+            {{{@custom.home_contact_subtext}}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
