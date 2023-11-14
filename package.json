@@ -108,7 +108,7 @@
       },
       "home_products_subtext": {
         "type": "text",
-        "default": "My expertise is in consumer tech products. I aspire to create products so good that their users can’t stop talking about them. I’m also passionate about building talented, cohesive teams and a strategic, thoughtful businesses; as that’s what it takes to create a great product.<br><br>These are a few products I’m proud of building.",
+        "default": "My expertise is in consumer tech products. I aspire to create products so good that their users can’t stop talking about them. I’m also passionate about building a talented, cohesive team and a strategic, thoughtful business; as that’s what it takes to create a great product.<br><br>These are a few products I’m proud of building.",
         "group": "homepage"
       },
       "home_writing_header": {

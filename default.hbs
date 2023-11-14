@@ -33,6 +33,59 @@
         document.documentElement.className = `has-${textColor}-text`;
     </script>
 
+    {{!-- https://ghost.org/tutorials/add-social-media-icons/ --}}
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <style>
+    .gh-foot-menu .nav-linkedin a,
+        .gh-foot-menu .nav-instagram a,
+        .gh-foot-menu .nav-x a {
+            font-size: 0 !important;
+        }
+
+        .gh-foot-menu .nav-linkedin a::before,
+        .gh-foot-menu .nav-instagram a::before,
+        .gh-foot-menu .nav-x a::before {
+            font-family: "Font Awesome 6 Brands";
+            display: inline-block;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .gh-foot-menu .nav-linkedin a::before {content: "\f08c"}
+        .gh-foot-menu .nav-instagram a::before {content: "\f16d"}
+        .gh-foot-menu .nav-x a::before {content: "\e61b"}
+    </style>
+
+    <!-- iubenda cookie policy solution  -->
+    <!-- https://www.iubenda.com/en/flow/3375589 -->
+    <!-- https://www.iubenda.com/en/help/1205-how-to-configure-your-cookie-solution-advanced-guide#consent-widget -->
+    <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = {"floatingPreferencesButtonDisplay":false,"askConsentAtCookiePolicyUpdate":true,"enableFadp":true,"enableLgpd":true,"enableUspr":true,"fadpApplies":true,"lang":"en","perPurposeConsent":true,"siteId":3375589,"usprApplies":true,"cookiePolicyId":65585643, "banner":{ "acceptButtonColor":"#EF8E3B","acceptButtonDisplay":true,"backgroundColor":"#3E3E3E","closeButtonDisplay":false,"customizeButtonColor":"#737373","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"logo":null,"position":"bottom","rejectButtonColor":"#737373","rejectButtonDisplay":true }};
+    </script>
+    <script
+        type="text/javascript"
+        src="https://cs.iubenda.com/autoblocking/3375589.js"
+    ></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script
+        type="text/javascript"
+        src="//cdn.iubenda.com/cs/iubenda_cs.js"
+        charset="UTF-8"
+        async
+    ></script>
+
     {{ghost_head}}
 </head>
 
